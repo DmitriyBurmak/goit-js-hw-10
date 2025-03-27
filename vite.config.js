@@ -38,7 +38,7 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     optimizeDeps: {
-      include: ['flatpickr'], // 🛠 Додаємо Flatpickr до оптимізації
+      include: ['flatpickr', 'izitoast'],
     },
     plugins: [
       injectHTML(),
