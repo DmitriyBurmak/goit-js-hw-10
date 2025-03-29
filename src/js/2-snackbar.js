@@ -2,8 +2,8 @@ console.log('snackbar');
 // Імпортуємо бібліотеку iziToast
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-// import successIcon from '../';
-// import errorIcon from '../img/error.svg';
+import successIcon from '../img/ok.svg';
+import errorIcon from '../img/error.svg';
 // Отримуємо елементи форми
 const form = document.querySelector('.form');
 const inputDelay = form.querySelector('input[name="delay"]');
@@ -31,10 +31,11 @@ form.addEventListener('submit', function (event) {
   promise
     .then(delay => {
       iziToast.success({
-        title: 'OK',
+        title:
+          '<svg class="icon"><use xlink:href="#icon-success"></use></svg> OK',
         message: `✅ Fulfilled promise in ${delay}ms`,
         position: 'topRight',
-        // iconUrl: successIcon,
+        iconUrl: successIcon,
         onOpening: function (instance, toast) {
           setTimeout(() => {
             toast.querySelector('.iziToast-title').style.color = '#fff'; // Змінюємо колір заголовка на зелений
@@ -47,8 +48,7 @@ form.addEventListener('submit', function (event) {
         title: 'Error',
         message: `❌ Rejected promise in ${delay}ms`,
         position: 'topRight',
-        // iconUrl: errorIcon,
-
+        iconUrl: errorIcon,
         onOpening: function (instance, toast) {
           setTimeout(() => {
             toast.querySelector('.iziToast-title').style.color = '#fff'; // Змінюємо колір заголовка на червоний
