@@ -19,12 +19,14 @@ body {
   font-family: Montserrat, sans-serif;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
   height: 100vh;
   background-color: #f8f9fa;
 }
 
+.home-page {
+  margin-bottom: 30px;
+}
+/* #region 1-timer */
 .flatpickr-calendar {
   background-color: #f5f5f5 !important;
 }
@@ -63,7 +65,7 @@ body {
   margin-left: 156px;
 }
 
-input {
+#datetime-picker {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -80,7 +82,7 @@ input {
   color: #2e2f42;
 }
 
-button {
+.btn-timer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,3 +128,71 @@ button:hover {
 .iziToast-wrapper-bottomRight {
   top: 0;
 }
+
+/* #endregion */
+
+/* #region snackbar */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 1440px;
+  height: 496px;
+  background-color: #fff;
+}
+
+.form-label-snackbar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form-input-snackbar {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+}
+
+.form-fildset-snackbar {
+  width: 360px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.btn-snackbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: #4e75ff;
+}
+
+.iziToast-success {
+  background-color: #59a10d !important;
+}
+
+.iziToast-error {
+  background-color: #ef4040 !important;
+}
+
+.iziToast-success .iziToast-title::before {
+  color: #fff !important;
+}
+
+/* #endregion */
