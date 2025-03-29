@@ -37,7 +37,7 @@ flatpickr(refs.input, {
     if (selectedTime <= new Date()) {
       iziToast.error({
         title: 'Error',
-        message: 'Please choose a date in the future',
+        message: 'illegal operation',
       });
       refs.startBtn.disabled = true;
     } else {
