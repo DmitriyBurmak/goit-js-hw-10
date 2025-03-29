@@ -173,12 +173,6 @@ button:hover {
   color: #2e2f42;
 }
 
-.fulfilled {
-}
-
-.rejected {
-}
-
 .btn-snackbar {
   display: flex;
   align-items: center;
