@@ -1,2 +1,2 @@
-import"./assets/styles-Bt0nluS4.js";console.log("Main");
+import"./assets/styles-DqF0xsJV.js";console.log("Main");
 //# sourceMappingURL=index.js.map
