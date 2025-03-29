@@ -139,6 +139,8 @@ button:hover {
   width: 1440px;
   height: 496px;
   background-color: #fff;
+  padding-left: 156px;
+  padding-top: 36px;
 }
 
 .form-label-snackbar {
@@ -156,6 +158,13 @@ button:hover {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 .form-fildset-snackbar {
@@ -202,6 +211,11 @@ button:hover {
 
 .iziToast-success .iziToast-title::before {
   color: #fff !important;
+}
+
+.iziToast-wrapper-topRight {
+  top: 70px !important;
+  right: 520px !important;
 }
 
 /* #endregion */
