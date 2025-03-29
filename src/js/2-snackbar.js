@@ -31,15 +31,12 @@ form.addEventListener('submit', function (event) {
   promise
     .then(delay => {
       iziToast.success({
-        title:
-          '<svg class="icon"><use xlink:href="#icon-success"></use></svg> OK',
+        title: 'OK',
         message: `✅ Fulfilled promise in ${delay}ms`,
         position: 'topRight',
         iconUrl: successIcon,
         onOpening: function (instance, toast) {
-          setTimeout(() => {
-            toast.querySelector('.iziToast-title').style.color = '#fff'; // Змінюємо колір заголовка на зелений
-          }, 100);
+          toast.querySelector('.iziToast-title').style.color = '#fff'; // Змінюємо колір заголовка на зелений без затримки
         },
       });
     })
@@ -50,9 +47,7 @@ form.addEventListener('submit', function (event) {
         position: 'topRight',
         iconUrl: errorIcon,
         onOpening: function (instance, toast) {
-          setTimeout(() => {
-            toast.querySelector('.iziToast-title').style.color = '#fff'; // Змінюємо колір заголовка на червоний
-          }, 100);
+          toast.querySelector('.iziToast-title').style.color = '#fff'; // Змінюємо колір заголовка на червоний без затримки
         },
       });
     });
